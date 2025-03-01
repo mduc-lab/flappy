@@ -35,7 +35,7 @@ colision_sound = pygame.mixer.Sound('flappy/sound/sfx_hit.wav')
 def create_pipe():
     random_pipe_pos = random.choice(pipe_height)
     bottom_pipe = pipe.get_rect(midtop=(500,random_pipe_pos))
-    top_pipe = pipe.get_rect(midbottom=(500,random_pipe_pos-200))
+    top_pipe = pipe.get_rect(midbottom=(500,random_pipe_pos-300))
     return top_pipe, bottom_pipe
 
 #ham di chuyen ong
@@ -129,4 +129,4 @@ while True:
     screen.blit(floor,(floor_x_pos+432,600))
 
     pygame.display.update()
-    clock.tick(50)
+    clock.tick(60)
